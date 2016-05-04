@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+something = Condition.create([{status: 'New'}, {status:"Used"}, {status: "Refurbished"}, {status: "As Is"}, {status: "Lightly Used"}, {status: "Like New"}])
+
+thing=Category.create([{name: "Clothing"}, {name: "Vehicles"}, {name: "Electronics"}, {name: "Books"}, {name: "Toys"}])

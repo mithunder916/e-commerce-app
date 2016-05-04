@@ -25,7 +25,11 @@
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
+  </div><br />
+
+  <div class="field">
+    <%= f.text_field :zip_code, placeholder: "Your Zip Code" %>
+  </div><br />
 
   <div class="actions">
     <%= f.submit "Update" %>
@@ -37,3 +41,5 @@
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+
+<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>

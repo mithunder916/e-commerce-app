@@ -1,0 +1,4 @@
+<% @products.each do |p| %>
+  <%= p.name %>
+  <%= p.distance_to(current_user) %>
+  <% end %>
