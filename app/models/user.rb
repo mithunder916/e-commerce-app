@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
     validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
     has_many :products
+    has_many :carts
 
     geocoded_by :zip_code
     after_validation :geocode          # auto-fetch coordinates

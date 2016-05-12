@@ -14,3 +14,21 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var map;
+function initMap() {
+  var product = new
+  google.maps.LatLng(latitude,longitude);
+  map = new
+  google.maps.Map(document.getElementById('map-canvas'), {
+    center: product,
+    zoom: 15,
+    scrollwheel: false,
+  });
+  var marker = new google.maps.Marker({
+  position: product,
+  map: map,
+  title: 'Hello World!',
+  draggable:true,
+});
+}
