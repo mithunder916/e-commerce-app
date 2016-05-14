@@ -2,10 +2,12 @@
 <html>
 <head>
   <title>Ecommerce</title>
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
 
   <%= javascript_include_tag 'application' %>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_api_key']%>&callback=initMap" type="text/javascript"></script>
+  <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>

@@ -2,8 +2,11 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :profiles, only: :show
+  resources :line_items, only: [:destroy, :create]
+  resources :products
+  resources :carts
 
-  root "products#index"
+  root "products#new"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

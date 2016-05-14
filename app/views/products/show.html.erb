@@ -7,3 +7,10 @@
     title='<%= j @product.name %>';
   <% end %>
 </div>
+
+<%= button_to 'Add to Cart', line_items_path(product_id: @product), class: "btn btn-success" %>
+<div class="wrap">
+  <div id="wrap">
+    <div id="map-canvas"></div>
+  </div>
+</div>
